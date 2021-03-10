@@ -1,12 +1,24 @@
 
 exports.min = function min (array) {
-  return 0;
+  if (array == 0 && array == ' ') {
+    return 0;
+  } esle {
+    return Math.min(array);
+  }
 }
 
 exports.max = function max (array) {
-  return 0;
+  if (array == 0 && array == ' ') {
+    return 0;
+  } esle {
+    return Math.max(array);
+  }
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  if (array == 0 && array == ' ') {
+    return 0;
+  } esle {
+    return array.reduce((sum, current) => (sum + current)/array.lenght, 0);
+  }
 }
